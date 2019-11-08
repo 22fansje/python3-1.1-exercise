@@ -67,3 +67,77 @@ while choice.lower() == "y":
 print("Bye!")
 -------------------------------------
 
+#!/usr/bin/env python3
+
+# display a welcome message
+print("The Miles Per Gallon program")
+print()
+
+# get input from the user
+miles_driven= float(input("Enter miles driven:\t\t"))
+gallons_used = float(input("Enter gallons of gas used:\t"))
+cost_per_gallon= float(input("Enter cost per gallon:\t\t"))
+
+# calculate miles per gallon
+mpg = miles_driven / gallons_used
+mpg = round(mpg, 1)
+
+#Total gas cost goes is shown here
+cpg = cost_per_gallon * gallons_used
+cpg = round(cpg, 1)
+            
+# format and display the result
+print()
+print("Miles Per Gallon:\t\t" + str(mpg))
+print("Total Gas Cost:\t\t" + str(cpg))
+print("Bye")
+--------------------------------------------------
+
+#!/usr/bin/env python3
+
+# display a welcome message
+print("The Test Scores program")
+print()
+print("Enter 3 test scores")
+print("======================")
+
+# get scores from the user
+total_score = 0       # initialize the variable for accumulating scores
+score1 = int(input("Enter test score: "))
+total_score += score1
+score2 = int(input("Enter test score: "))
+total_score += score2
+score3 = int(input("Enter test score: "))
+total_score += score3
+# calculate average score
+average_score = round(total_score / 3)
+             
+# format and display the result
+print("======================")
+print("The scores you put in are: ", score1, score2, score3)
+print("Total Score:  ", total_score,
+      "\nAverage Score:", average_score)
+print()
+print("Bye")
+---------------------------------------------------------------------
+
+#!/usr/bin/env python3
+
+# display a welcome message
+print("The Miles Per Gallon program")
+print()
+
+# get input from the user
+length= float(input("Enter the length:\t\t"))
+width = float(input("Enter the width:\t"))
+
+# calculate length and width
+mpg = length / width
+mpg = round(mpg, 2)
+per = length * width            
+# format and display the result
+print()
+print("Area:\t\t" + str(mpg))
+print("Perimeter:\t\t" + str(per))
+print()
+print("Thanks for using this program")
